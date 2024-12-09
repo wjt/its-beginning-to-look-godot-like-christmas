@@ -1,14 +1,5 @@
-shader_type spatial;
-
-void vertex() {
-	// Called for every vertex the material is visible on.
-}
+shader_type canvas_item;
 
 void fragment() {
-	// Called for every pixel the material is visible on.
+	COLOR.rgb *= 1.0 + (sin(TIME / 10.0) / 100.0);
 }
-
-//void light() {
-	// Called for every pixel for every light affecting the material.
-	// Uncomment to replace the default light processing function with this one.
-//}
