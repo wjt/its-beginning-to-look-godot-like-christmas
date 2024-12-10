@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://cbdry6cm0jwxp"]
+[gd_scene load_steps=12 format=4 uid="uid://cbdry6cm0jwxp"]
 
 [ext_resource type="PackedScene" uid="uid://ddv8l2myfll6t" path="res://scenes/background/background.tscn" id="1_1bvp3"]
 [ext_resource type="TileSet" uid="uid://dmyhabfpfps78" path="res://assets/tiles.tres" id="2_0xm2m"]
@@ -7,12 +7,14 @@
 [ext_resource type="Script" path="res://face_path.gd" id="4_s401h"]
 [ext_resource type="Texture2D" uid="uid://itka5e4ho3e8" path="res://assets/faces/rodrigo.png" id="6_matn7"]
 [ext_resource type="Texture2D" uid="uid://bmis22wqy5yp7" path="res://assets/faces/stephen.png" id="6_vrfv3"]
+[ext_resource type="Texture2D" uid="uid://cjrg281l8dowd" path="res://assets/faces/manuel.png" id="7_2g80n"]
+[ext_resource type="Texture2D" uid="uid://qoxaittblcj" path="res://assets/faces/matt.png" id="8_bp373"]
 
 [sub_resource type="Curve2D" id="Curve2D_nm8ru"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -84, 613, 0, 0, 0, 0, 70, 769, 0, 0, 0, 0, 491, 769, 0, 0, 0, 0, 662, 941, 0, 0, 0, 0, 1161, 940, 0, 0, 0, 0, 1468, 628, 0, 0, 0, 0, 1892, 630, 0, 0, 0, 0, 2007, 748)
+"points": PackedVector2Array(0, 0, 0, 0, -209, 492, 0, 0, 0, 0, 70, 769, 0, 0, 0, 0, 491, 769, 0, 0, 0, 0, 662, 941, 0, 0, 0, 0, 1161, 940, 0, 0, 0, 0, 1468, 628, 0, 0, 0, 0, 1892, 630, 0, 0, 0, 0, 2007, 748, 0, 0, 0, 0, 2005, 746, 0, 0, 0, 0, 1959, 699, 0, 0, 0, 0, 2165, 891)
 }
-point_count = 8
+point_count = 11
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_62csv"]
 shader = ExtResource("3_2gmr2")
@@ -43,12 +45,19 @@ curve = SubResource("Curve2D_nm8ru")
 script = ExtResource("4_s401h")
 
 [node name="Timer" type="Timer" parent="FacePath"]
-wait_time = 30.0
+wait_time = 10.0
+one_shot = true
 autostart = true
 
 [node name="FacePathFollow" type="PathFollow2D" parent="FacePath"]
-position = Vector2(-84, 613)
-rotation = 0.79185
+position = Vector2(-209, 492)
+rotation = 0.781801
+
+[node name="Matt" type="Sprite2D" parent="FacePath/FacePathFollow"]
+visible = false
+position = Vector2(0, -80)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("8_bp373")
 
 [node name="Rob" type="Sprite2D" parent="FacePath/FacePathFollow"]
 visible = false
@@ -56,17 +65,24 @@ position = Vector2(0, -90)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("4_fy8wu")
 
+[node name="Stephen" type="Sprite2D" parent="FacePath/FacePathFollow"]
+visible = false
+position = Vector2(3.05176e-05, -90)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("6_vrfv3")
+
 [node name="Rodrigo" type="Sprite2D" parent="FacePath/FacePathFollow"]
 visible = false
 position = Vector2(0, -90)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("6_matn7")
+flip_h = true
 
-[node name="Stephen" type="Sprite2D" parent="FacePath/FacePathFollow"]
+[node name="Manuel" type="Sprite2D" parent="FacePath/FacePathFollow"]
 visible = false
-position = Vector2(0, -90)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("6_vrfv3")
+position = Vector2(0, -75)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("7_2g80n")
 
 [node name="Snow" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_62csv")
