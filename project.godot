@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Snow"
+config/name="It's Beginning To Look Godot Like Christmas"
+config/description="My entry for Endless Foundation's 2024 Christmas decoration competition.	"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
@@ -65,3 +66,8 @@ snow_fast={
 , Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":1,"axis_value":1.0,"script":null)
 ]
 }
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
