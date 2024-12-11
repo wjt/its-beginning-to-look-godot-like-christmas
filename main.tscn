@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=4 uid="uid://cbdry6cm0jwxp"]
+[gd_scene load_steps=14 format=4 uid="uid://cbdry6cm0jwxp"]
 
 [ext_resource type="PackedScene" uid="uid://ddv8l2myfll6t" path="res://scenes/background/background.tscn" id="1_1bvp3"]
+[ext_resource type="Script" path="res://main.gd" id="1_ideji"]
 [ext_resource type="TileSet" uid="uid://dmyhabfpfps78" path="res://assets/tiles.tres" id="2_0xm2m"]
 [ext_resource type="Shader" path="res://assets/rain-and-snow-shader/rain_and_snow_shader.gdshader" id="3_2gmr2"]
 [ext_resource type="Texture2D" uid="uid://cvxktqkrf0xq7" path="res://assets/faces/ramcq.png" id="4_fy8wu"]
@@ -9,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bmis22wqy5yp7" path="res://assets/faces/stephen.png" id="6_vrfv3"]
 [ext_resource type="Texture2D" uid="uid://cjrg281l8dowd" path="res://assets/faces/manuel.png" id="7_2g80n"]
 [ext_resource type="Texture2D" uid="uid://qoxaittblcj" path="res://assets/faces/matt.png" id="8_bp373"]
+[ext_resource type="Script" path="res://snow.gd" id="11_3ircf"]
 
 [sub_resource type="Curve2D" id="Curve2D_nm8ru"]
 _data = {
@@ -31,6 +33,7 @@ shader_parameter/additional_rain_speed = 0.1
 shader_parameter/slant = -0.093
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_ideji")
 
 [node name="Background" parent="." instance=ExtResource("1_1bvp3")]
 
@@ -46,7 +49,6 @@ script = ExtResource("4_s401h")
 
 [node name="Timer" type="Timer" parent="FacePath"]
 wait_time = 10.0
-one_shot = true
 autostart = true
 
 [node name="FacePathFollow" type="PathFollow2D" parent="FacePath"]
@@ -90,6 +92,7 @@ offset_right = 1940.0
 offset_bottom = 950.0
 scale = Vector2(0.998675, 1)
 color = Color(0.99, 0.99, 0.99, 0)
+script = ExtResource("11_3ircf")
 
 [node name="Lake" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAJAA0AAAAIAAIAAAAKAA0AAAAIAAIAAAALAA0AAAAIAAIAAAAMAA0AAAAIAAIAAAANAA0AAAAIAAIAAAAOAA0AAAAIAAIAAAAPAA0AAAAIAAIAAAAQAA0AAAAIAAIAAAAQAA4AAAAHAAMAAAAKAA4AAAAHAAMAAAALAA4AAAAHAAMAAAAMAA4AAAAHAAMAAAANAA4AAAAIAAMAAAAOAA4AAAAKAAMAAAAPAA4AAAAKAAMAAAALAA8AAAAKAAMAAAAMAA8AAAAIAAMAAAANAA8AAAAIAAMAAAAOAA8AAAAIAAMAAAAPAA8AAAAIAAMAAAA=")
