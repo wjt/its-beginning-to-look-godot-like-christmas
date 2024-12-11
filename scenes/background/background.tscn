@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://ddv8l2myfll6t"]
+[gd_scene load_steps=10 format=3 uid="uid://ddv8l2myfll6t"]
 
-[ext_resource type="Script" uid="uid://b7n427dlfs0qa" path="res://scenes/background/background.gd" id="1_rsf5d"]
+[ext_resource type="Script" path="res://scenes/background/background.gd" id="1_rsf5d"]
 [ext_resource type="Shader" path="res://scenes/background/sun.gdshader" id="2_68bbc"]
 [ext_resource type="Texture2D" uid="uid://gppyyiq7l812" path="res://assets/kenney_platformer-art-deluxe/Base pack/Items/cloud1.png" id="2_ewwm8"]
+[ext_resource type="Texture2D" uid="uid://gurevq2p0ank" path="res://assets/endlessos.svg" id="3_binj3"]
 [ext_resource type="Texture2D" uid="uid://51pd10hf3tr" path="res://assets/kenney_platformer-art-deluxe/Base pack/Items/cloud2.png" id="3_jjv1t"]
 [ext_resource type="Texture2D" uid="uid://dh0a82ms3l3w1" path="res://assets/kenney_platformer-art-deluxe/Base pack/Items/cloud3.png" id="4_ewwm8"]
 
@@ -50,9 +51,14 @@ texture = ExtResource("2_ewwm8")
 offset = Vector2(-5, 1)
 
 [node name="Sprite2D4" type="Sprite2D" parent="Clouds1"]
-position = Vector2(1640, 990)
+position = Vector2(1640, 991.667)
 texture = ExtResource("2_ewwm8")
 offset = Vector2(-5, 1)
+
+[node name="Logo" type="Sprite2D" parent="Clouds1/Sprite2D4"]
+position = Vector2(-8.3335, 8.33374)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_binj3")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Clouds1"]
 position = Vector2(1221, 410)
@@ -60,7 +66,7 @@ texture = ExtResource("2_ewwm8")
 offset = Vector2(-5, 1)
 
 [node name="Sprite2D3" type="Sprite2D" parent="Clouds1"]
-position = Vector2(2513.33, 1330)
+position = Vector2(2513.33, 1328.33)
 texture = ExtResource("4_ewwm8")
 
 [node name="Clouds2" type="ParallaxLayer" parent="."]
