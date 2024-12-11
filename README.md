@@ -10,6 +10,7 @@ pronunciation to make the festive pun work.
 ## Credits
 
 - Tiles are from [Kenney's Platformer Pack](https://kenney.nl/assets/series:Platformer%20Pack) (CC-0).
+- Keyboard & gamepad glyphs are from [Kenney's Input Prompts](https://kenney.nl/assets/input-prompts) (CC-0).
 - The snow is [Rain and Snow Shader with Parallax Effect for Godot by Steampunkdaemon](https://steampunkdemon.itch.io/rain-and-snow-shader-with-parallax-effect-for-godot) (MIT).
 - The faces are my colleagues – please don't reuse them.
 

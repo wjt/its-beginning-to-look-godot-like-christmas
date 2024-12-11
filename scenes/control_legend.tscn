@@ -1,0 +1,114 @@
+[gd_scene load_steps=13 format=3 uid="uid://b4upvm74gte5"]
+
+[ext_resource type="Texture2D" uid="uid://bh7482qx8nup" path="res://assets/kenney_input-prompts/Steam Deck/Default/steamdeck_stick_l_left.png" id="1_1j6p3"]
+[ext_resource type="Texture2D" uid="uid://d155ks7g7s3kk" path="res://assets/kenney_input-prompts/Steam Deck/Default/steamdeck_stick_l_right.png" id="2_ybcvt"]
+[ext_resource type="Texture2D" uid="uid://bs68bbnh7f5a4" path="res://assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_left.png" id="3_mp3b1"]
+[ext_resource type="Texture2D" uid="uid://b76wynl2apta6" path="res://assets/kenney_input-prompts/Steam Deck/Default/steamdeck_stick_l_up.png" id="3_rhjpe"]
+[ext_resource type="Texture2D" uid="uid://eottr3b1u7tw" path="res://assets/kenney_input-prompts/Steam Deck/Default/steamdeck_stick_l_down.png" id="4_xatun"]
+[ext_resource type="Texture2D" uid="uid://lwpvsv6n8van" path="res://assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_right.png" id="4_y1f0q"]
+[ext_resource type="Texture2D" uid="uid://cnx38lv2kxoc0" path="res://assets/kenney_input-prompts/Steam Deck/Default/steamdeck_button_a.png" id="5_hnd0v"]
+[ext_resource type="Texture2D" uid="uid://3l3b0v8m8u3o" path="res://assets/kenney_input-prompts/Steam Deck/Default/steamdeck_button_b.png" id="6_ycckv"]
+[ext_resource type="Texture2D" uid="uid://3wjwhsprbv0t" path="res://assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_up.png" id="7_xk84f"]
+[ext_resource type="Texture2D" uid="uid://dn2n7srra2me6" path="res://assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_down.png" id="8_ksvte"]
+[ext_resource type="Texture2D" uid="uid://d3kuleobhkirv" path="res://assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_enter.png" id="10_kj4r4"]
+[ext_resource type="Texture2D" uid="uid://i6u2v1gmojsb" path="res://assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_backspace.png" id="12_vm4m3"]
+
+[node name="ControlLegend" type="Control"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+
+[node name="Grid" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -273.0
+offset_top = -268.0
+grow_horizontal = 0
+grow_vertical = 0
+columns = 5
+
+[node name="Label" type="Label" parent="Grid"]
+layout_mode = 2
+text = "Wind speed"
+
+[node name="JoypadLeft" type="TextureRect" parent="Grid" groups=["joypad"]]
+layout_mode = 2
+texture = ExtResource("1_1j6p3")
+
+[node name="JoypadRight" type="TextureRect" parent="Grid" groups=["joypad"]]
+layout_mode = 2
+texture = ExtResource("2_ybcvt")
+
+[node name="KeyboardLeft" type="TextureRect" parent="Grid" groups=["joypad"]]
+layout_mode = 2
+texture = ExtResource("3_mp3b1")
+
+[node name="KeyboardRight" type="TextureRect" parent="Grid" groups=["joypad"]]
+layout_mode = 2
+texture = ExtResource("4_y1f0q")
+
+[node name="Label2" type="Label" parent="Grid"]
+layout_mode = 2
+text = "Snow speed"
+
+[node name="JoypadUp" type="TextureRect" parent="Grid" groups=["joypad"]]
+layout_mode = 2
+texture = ExtResource("3_rhjpe")
+
+[node name="JoypadDown" type="TextureRect" parent="Grid" groups=["joypad"]]
+layout_mode = 2
+texture = ExtResource("4_xatun")
+
+[node name="KeyboardUp" type="TextureRect" parent="Grid" groups=["joypad"]]
+layout_mode = 2
+texture = ExtResource("7_xk84f")
+
+[node name="KeyboardDown" type="TextureRect" parent="Grid" groups=["joypad"]]
+layout_mode = 2
+texture = ExtResource("8_ksvte")
+
+[node name="Label3" type="Label" parent="Grid"]
+layout_mode = 2
+text = "Spawn a visitor"
+
+[node name="JoypadA" type="TextureRect" parent="Grid" groups=["joypad"]]
+layout_mode = 2
+texture = ExtResource("5_hnd0v")
+
+[node name="Dummy" type="TextureRect" parent="Grid"]
+layout_mode = 2
+
+[node name="KeyboardEnter" type="TextureRect" parent="Grid" groups=["joypad"]]
+layout_mode = 2
+texture = ExtResource("10_kj4r4")
+
+[node name="Dummy3" type="TextureRect" parent="Grid"]
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="Grid"]
+layout_mode = 2
+text = "Start visitor timer"
+
+[node name="Dummy2" type="TextureRect" parent="Grid" groups=["joypad"]]
+layout_mode = 2
+
+[node name="JoypadB" type="TextureRect" parent="Grid"]
+layout_mode = 2
+texture = ExtResource("6_ycckv")
+
+[node name="Dummy4" type="TextureRect" parent="Grid" groups=["joypad"]]
+layout_mode = 2
+
+[node name="KeyboardBackspace" type="TextureRect" parent="Grid"]
+layout_mode = 2
+texture = ExtResource("12_vm4m3")
