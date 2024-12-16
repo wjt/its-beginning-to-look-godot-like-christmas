@@ -8,6 +8,5 @@ func _process(delta: float) -> void:
 	
 	if tilt:
 		speed = clamp (speed + tilt * (20 * delta), -10.0, 10.0)
-		print("speed", speed)
 
 	scroll_offset.x -= (delta * speed)

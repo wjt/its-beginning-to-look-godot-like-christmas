@@ -4,7 +4,6 @@ func adjust(shader_parameter: StringName, adjustment: float, min: float, max: fl
 	var m = material as ShaderMaterial
 	var value = m.get_shader_parameter(shader_parameter)
 	value = clampf(value + adjustment, min, max)
-	print(shader_parameter, " -> ", value)
 	m.set_shader_parameter(shader_parameter, value)
 
 func _process(delta: float) -> void:
