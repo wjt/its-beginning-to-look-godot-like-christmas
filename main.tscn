@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cjrg281l8dowd" path="res://assets/faces/manuel.png" id="7_2g80n"]
 [ext_resource type="Texture2D" uid="uid://qoxaittblcj" path="res://assets/faces/matt.png" id="8_bp373"]
 [ext_resource type="Script" path="res://snow.gd" id="11_3ircf"]
-[ext_resource type="PackedScene" uid="uid://b4upvm74gte5" path="res://scenes/control_legend.tscn" id="12_55xyr"]
+[ext_resource type="PackedScene" uid="uid://b4upvm74gte5" path="res://scenes/control_legend/control_legend.tscn" id="12_55xyr"]
 
 [sub_resource type="Curve2D" id="Curve2D_nm8ru"]
 _data = {
