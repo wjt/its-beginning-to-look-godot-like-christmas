@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://b4upvm74gte5"]
 
 [ext_resource type="Texture2D" uid="uid://csuaoaclr7fyb" path="res://assets/kenney_input-prompts/Steam Deck/Default/steamdeck_stick_l_horizontal.png" id="1_6u7qc"]
-[ext_resource type="Script" path="res://scenes/control_legend/control_legend.gd" id="1_hbahy"]
+[ext_resource type="Script" uid="uid://ccd1n6uqs2mc5" path="res://scenes/control_legend/control_legend.gd" id="1_hbahy"]
 [ext_resource type="StyleBox" uid="uid://db4ob2gq7j8vs" path="res://scenes/control_legend/mode_switch_tab_panel.tres" id="2_j4jmc"]
 [ext_resource type="Texture2D" uid="uid://ffs8ne7b7ijc" path="res://assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrows_horizontal.png" id="2_w3q02"]
 [ext_resource type="Texture2D" uid="uid://blprvur1vdmtb" path="res://assets/kenney_input-prompts/Steam Deck/Default/steamdeck_stick_l_vertical.png" id="3_kfgte"]

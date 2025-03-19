@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://ddv8l2myfll6t"]
 
-[ext_resource type="Script" path="res://scenes/background/background.gd" id="1_rsf5d"]
-[ext_resource type="Shader" path="res://scenes/background/sun.gdshader" id="2_68bbc"]
+[ext_resource type="Script" uid="uid://b7n427dlfs0qa" path="res://scenes/background/background.gd" id="1_rsf5d"]
+[ext_resource type="Shader" uid="uid://b1gkwe5uidhx6" path="res://scenes/background/sun.gdshader" id="2_68bbc"]
 [ext_resource type="Texture2D" uid="uid://gppyyiq7l812" path="res://assets/kenney_platformer-art-deluxe/Base pack/Items/cloud1.png" id="2_ewwm8"]
 [ext_resource type="Texture2D" uid="uid://gurevq2p0ank" path="res://assets/endlessos.svg" id="3_binj3"]
 [ext_resource type="Texture2D" uid="uid://51pd10hf3tr" path="res://assets/kenney_platformer-art-deluxe/Base pack/Items/cloud2.png" id="3_jjv1t"]
